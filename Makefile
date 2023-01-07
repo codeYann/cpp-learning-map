@@ -12,7 +12,7 @@ BSC = basics
 LGC = logic
 
 basics:
-	$(CC) $(SRC)/$(BSC)/logic.cpp -o ./index
+	$(CC) $(SRC)/$(BSC)/loops.cpp -o ./index
 	./index
 
 clean:
