@@ -9,11 +9,16 @@ SRC = src
 
 # define basics
 BSC = basics
-LGC = logic
+FN = functions
 
 basics:
-	$(CC) $(SRC)/$(BSC)/loops.cpp -o ./index
-	./index
+	$(CC) $(SRC)/$(BSC)/loops.cpp -o ./bsc
+	./bsc
+
+functions:
+	$(CC) $(SRC)/$(FN)/fn.cpp -o ./fn
+	./fn
+
 
 clean:
-	rm ./index
+	rm ./fn
